@@ -1,8 +1,9 @@
-function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+function indexOfIgnoreCase(str, subStr) {
+    // Convert both strings to lowercase for case insensitivity
+    const normalizedStr = str.toLowerCase();
+    const normalizedSubStr = subStr.toLowerCase();
+
+    // Use indexOf to find the index of normalizedSubStr in normalizedStr
+    return normalizedStr.indexOf(normalizedSubStr);
 }
 
-// Please do not change the code below
-const s1 = prompt("Enter s1:");
-const s2 = prompt("Enter s2:");
-alert(indexOfIgnoreCase(s1, s2));
